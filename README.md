@@ -1,11 +1,8 @@
-# OpenCV-with-Flask
-
-# Live Stream App
+# Live Stream App With Flask and OpenCV.
 
 ![sscv](https://github.com/user-attachments/assets/753a49d1-6978-4ba5-a590-afd8d1bd34bf)
 
-
-<img width="1440" alt="Screenshot 2024-09-08 at 7 08 52 PM" src="https://github.com/user-attachments/assets/461bc869-180b-4427-a919-52acc700ab68">
+<img width="1440" alt="Screenshot 2024-09-08 at 7 08 52 PM" src="https://github.com/user-attachments/assets/64383930-9f9f-4788-8d49-24d85c48b343">
 
 
 ## 🚀 Overview
