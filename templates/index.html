@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+            padding: 20px;
+        }
+        .live-feed {
+            flex: 7;
+            padding-right: 20px;
+            border-right: 2px solid #dee2e6;
+        }
+        .gallery {
+            flex: 3;
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 2px solid #dee2e6;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .gallery-item {
+            margin-bottom: 10px;
+        }
+        .gallery img, .gallery video {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+        }
+        .btn-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .btn-row .btn {
+            flex: 1;
+            min-width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Live Stream App</a>
+    </nav>
+    <div class="container">
+        <div class="live-feed">
+            <h2>Live Feed</h2>
+            <img src="{{ url_for('video') }}" id="live-feed" class="img-fluid">
+            <div class="btn-row mt-3">
+                <form action="{{ url_for('start_camera') }}" method="post">
+                    <button type="submit" class="btn btn-primary">Start Camera</button>
+                </form>
+                <form action="{{ url_for('stop_camera') }}" method="post">
+                    <button type="submit" class="btn btn-danger">Stop Camera</button>
+                </form>
+                <form action="{{ url_for('capture') }}" method="post">
+                    <button type="submit" class="btn btn-success">Capture Image</button>
+                </form>
+                <form action="{{ url_for('start_recording') }}" method="post">
+                    <button type="submit" class="btn btn-info">Start Recording</button>
+                </form>
+                <form action="{{ url_for('stop_recording') }}" method="post">
+                    <button type="submit" class="btn btn-warning">Stop Recording</button>
+                </form>
+            </div>
+        </div>
+        <div class="gallery">
+            <h2>Gallery</h2>
+            {% for image in images %}
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/' + image) }}" alt="{{ image }}">
+                    <form action="{{ url_for('delete_image', filename=image) }}" method="post">
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </div>
+            {% endfor %}
+            {% for video in videos %}
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="{{ url_for('static', filename='videos/' + video) }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <form action="{{ url_for('delete_video', filename=video) }}" method="post">
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
