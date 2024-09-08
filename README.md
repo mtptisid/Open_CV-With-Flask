@@ -1,4 +1,4 @@
-# OpenCV-with-Flask
+<img width="1440" alt="Screenshot 2024-09-08 at 7 07 26 PM" src="https://github.com/user-attachments/assets/7d408c16-6fc6-41fa-9459-12b8d6d3b62b"># OpenCV-with-Flask
 
 # Live Stream App
 
@@ -74,8 +74,8 @@ The Live Stream App is a Flask-based web application that provides real-time vid
 ### **Live Feed and Controls.**
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/user-attachments/assets/31eb4029-30f4-4181-8720-337b4c66b1a9" alt="Image 1" style="width: 48%;"/>
-  <img src="https://github.com/user-attachments/assets/2da671fd-03cc-4635-b447-7b7b5c24a49b" alt="Image 2" style="width: 48%;"/>
+  <img src="https://github.com/user-attachments/assets/d1f8fa10-3401-453d-a96d-52d5b948f741" alt="Image 1" style="width: 48%;"/>
+  <img src="https://github.com/user-attachments/assets/054629db-d073-4e7f-9ae4-53fabceb0ee2" alt="Image 2" style="width: 48%;"/>
 </div>
 
 
@@ -83,10 +83,9 @@ The Live Stream App is a Flask-based web application that provides real-time vid
 ### **Gallery View.**
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/user-attachments/assets/2b4fb4a2-7674-4a90-bb9e-d615a34340d2" alt="Image 1" style="width: 48%;"/>
-  <img src="https://github.com/user-attachments/assets/f9088bcf-db54-4c4c-8b46-1c4447cd3e2c" alt="Image 2" style="width: 48%;"/>
+  <img src="https://github.com/user-attachments/assets/ef9c258e-ec3e-4344-90d8-b4391872963f" alt="Image 1" style="width: 48%;"/>
+  <img src="https://github.com/user-attachments/assets/ba520049-097f-4c56-9755-22189386c647" alt="Image 2" style="width: 48%;"/>
 </div>
-  
 
 ## 🔧 Troubleshooting
 
