@@ -1,8 +1,9 @@
-<img width="1440" alt="Screenshot 2024-09-08 at 7 07 26 PM" src="https://github.com/user-attachments/assets/7d408c16-6fc6-41fa-9459-12b8d6d3b62b"># OpenCV-with-Flask
+# OpenCV-with-Flask
 
 # Live Stream App
 
-![sscv](https://github.com/user-attachments/assets/aefc8737-b7ea-4405-824c-0e65b39f2927)
+![sscv](https://github.com/user-attachments/assets/753a49d1-6978-4ba5-a590-afd8d1bd34bf)
+
 
 <img width="1440" alt="Screenshot 2024-09-08 at 7 08 52 PM" src="https://github.com/user-attachments/assets/461bc869-180b-4427-a919-52acc700ab68">
 
